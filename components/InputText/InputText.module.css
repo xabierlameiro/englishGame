@@ -1,0 +1,36 @@
+.input_wrapper {
+    width: 100%;
+}
+
+.input {
+    width: inherit;
+    font-size: 30px;
+    outline: none;
+    user-select: none;
+}
+.input::placeholder {
+    text-transform: capitalize;
+    font-size: 20px;
+    padding-left: 10px;
+    align-items: center;
+    display: flex;
+    opacity: 0.6;
+}
+
+.input::placeholder {
+    color: var(--text-color);
+}
+
+.unabled {
+    background: transparent;
+    border: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .input {
+        font-size: 20px;
+        padding: 10px;
+    }
+}

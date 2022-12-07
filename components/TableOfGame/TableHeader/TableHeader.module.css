@@ -1,0 +1,19 @@
+.table_header {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .table_header {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        font-size: 16px;
+        padding-bottom: 0;
+        align-items: center;
+        gap: 10px;
+    }
+}

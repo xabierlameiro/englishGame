@@ -1,26 +1,50 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    min-height: 100vh;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+    :root {
+        --no-color: transparent;
+        --text-color: 247, 247, 247;
+        --bg-color: 34, 36, 48;
+        --success-color: 0, 128, 0;
+        --error-color: 255, 0, 0;
+    }
+
+    body,
+    html {
+        color-scheme: dark;
+        background-color: rgba(var(--bg-color), 0.5);
+        color: rgba(var(--text-color), 0.5);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --no-color: transparent;
+        --text-color: 34, 36, 48;
+        --bg-color: 230, 230, 230;
+        --success-color: 0, 128, 0;
+        --error-color: 255, 0, 0;
+    }
+    html,
+    body {
+        color-scheme: light;
+        background-color: rgba(var(--bg-color), 0.5);
+        color: rgba(var(--text-color), 0.5);
+    }
 }

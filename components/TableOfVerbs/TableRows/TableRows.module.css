@@ -1,0 +1,77 @@
+.row {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    grid-auto-rows: 46.5px;
+    justify-items: left;
+    align-items: center;
+    font-size: 30px;
+}
+
+.row_number {
+    justify-self: right;
+    font-variant-numeric: tabular-nums;
+    text-align: left;
+}
+
+.empty {
+    display: grid;
+    place-content: center;
+    padding: 50px;
+    font-size: 40px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .row {
+        font-size: 20px;
+        grid-template-columns: 40px 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .row {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .row {
+        grid-template-columns: calc(50vw - 20px);
+        font-size: 20px;
+        scroll-snap-align: start;
+        justify-items: center;
+    }
+
+    .row_number {
+        display: none;
+    }
+
+    .verbs {
+        display: grid;
+        grid-auto-flow: column;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        scroll-snap-align: center;
+        scroll-snap-type: x mandatory;
+    }
+
+    .empty {
+        font-size: 30px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .verbs::-webkit-scrollbar {
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    .verbs::-webkit-scrollbar-track {
+        background-color: rgba(var(--bg-color), 1);
+    }
+
+    .verbs::-webkit-scrollbar-thumb {
+        background-color: rgba(var(--text-color), 1);
+        width: 1px;
+    }
+}

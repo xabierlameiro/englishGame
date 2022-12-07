@@ -1,0 +1,15 @@
+.table {
+    display: grid;
+    max-width: 1200px;
+    margin: 50px auto 50px;
+    padding: 0 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .table {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        padding: 0 10px;
+        height: 255px;
+    }
+}

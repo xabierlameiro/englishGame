@@ -1,0 +1,23 @@
+.table_finder {
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .table_finder {
+        grid-template-columns: 40px 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .table_finder {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    .clear {
+        display: none;
+    }
+}

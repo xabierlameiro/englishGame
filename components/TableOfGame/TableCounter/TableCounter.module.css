@@ -1,0 +1,20 @@
+.counter {
+    padding: 0 0 20px 0;
+    display: grid;
+    margin: 0 0 0 auto;
+}
+
+.counter div {
+    display: grid;
+    grid-template-columns: 100px 70px 120px;
+    justify-items: right;
+    opacity: 0.8;
+}
+
+.hits {
+    color: rgba(var(--success-color), 1);
+}
+
+.fails {
+    color: rgba(var(--error-color), 1);
+}

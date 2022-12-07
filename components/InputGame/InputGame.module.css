@@ -1,0 +1,26 @@
+.input {
+    width: 100%;
+    max-width: 250px;
+    font-size: 30px;
+    text-transform: capitalize;
+    outline: none;
+}
+
+.input::placeholder {
+    color: var(--text-color);
+}
+
+.not_editable {
+    background-color: var(--no-color);
+    border: none;
+    cursor: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.is_valid {
+    color: var(--text-color);
+    cursor: none;
+    user-select: none;
+    pointer-events: none;
+}

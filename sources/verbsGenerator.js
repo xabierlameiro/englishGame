@@ -33,7 +33,7 @@ const irregular_verbs = [
         infinitive: "Become",
         pastSimple: "Became",
         pastParticiple: "Become",
-        translation: "Llegar a Ser",
+        translation: "Convertirse",
     },
     {
         infinitive: "Begin",
@@ -399,7 +399,7 @@ const irregular_verbs = [
         infinitive: "Lay",
         pastSimple: "Laid",
         pastParticiple: "Laid",
-        translation: "Poner",
+        translation: "Colocar",
     },
     {
         infinitive: "Lead",

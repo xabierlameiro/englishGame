@@ -4,7 +4,7 @@ export const removeWhiteSpacesAndLowerCase = (text: string) =>
     text.toLowerCase().trim().replace(/ /g, EMPTY);
 
 export const lowerCaseAndSplitWords = (text: string) =>
-    text.toLowerCase().split("/");
+    removeWhiteSpacesAndLowerCase(text).split("/");
 
 export const onlyLettersAvailable = (text: string) =>
     text.replace(/[^a-zA-Z\s]/g, EMPTY);

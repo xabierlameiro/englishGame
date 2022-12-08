@@ -1,13 +1,14 @@
 .counter {
-    padding: 0 0 20px 0;
     display: grid;
-    margin: 0 0 0 auto;
+    width: 300px;
+    place-content: center;
+    margin: 20px auto;
 }
 
 .counter div {
     display: grid;
     grid-template-columns: 100px 70px 120px;
-    justify-items: right;
+    justify-items: center;
     opacity: 0.8;
 }
 

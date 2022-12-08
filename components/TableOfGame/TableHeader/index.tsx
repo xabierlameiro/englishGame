@@ -3,7 +3,7 @@ import styles from "./TableHeader.module.css";
 const TableHeader = () => {
     return (
         <div className={styles.table_header}>
-            <div />
+            <div className={styles.clear} />
             <div>Infinitive</div>
             <div>P.Simple</div>
             <div>P.Participle</div>

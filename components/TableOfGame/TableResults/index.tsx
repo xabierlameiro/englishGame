@@ -21,13 +21,11 @@ const TableResults = ({ resultList }: { resultList: ObjectVerbType[] }) => {
                                     : EMPTY
                             }`}
                         >
-                            {item.verbType === type
-                                ? item.query
-                                : item.infinitive}
+                            {item.verbType === type ? item.query : item[type]}
                         </div>
                         <div className={styles.solution}>
                             {item.verbType === type && !item.success
-                                ? `(${item.infinitive})`
+                                ? `(${item[type]})`
                                 : EMPTY}
                         </div>
                     </div>
@@ -39,7 +37,7 @@ const TableResults = ({ resultList }: { resultList: ObjectVerbType[] }) => {
         .map((item, a) => {
             return (
                 <div key={a} className={styles.row}>
-                    <div />
+                    <div className={styles.clear} />
                     {checkAnswer(item)}
                     <div>{item.translation}</div>
                 </div>

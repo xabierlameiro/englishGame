@@ -40,7 +40,7 @@ const TableInput = ({
                 key={verb.number}
                 className={`${styles.row} ${styles.row_input}`}
             >
-                <div />
+                <div className={styles.clear} />
                 <InputGame
                     verb={verb}
                     verbType={VERBS.INFINITIVE}

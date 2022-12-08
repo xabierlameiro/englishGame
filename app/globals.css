@@ -23,6 +23,7 @@ a {
         --bg-color: 34, 36, 48;
         --success-color: 0, 128, 0;
         --error-color: 255, 0, 0;
+        --menu-color: #00baf0;
     }
 
     body,
@@ -40,6 +41,7 @@ a {
         --bg-color: 230, 230, 230;
         --success-color: 0, 128, 0;
         --error-color: 255, 0, 0;
+        --menu-color: #0a9c15;
     }
     html,
     body {

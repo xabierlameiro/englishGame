@@ -38,4 +38,8 @@
     .clear {
         display: none;
     }
+
+    .translation {
+        color: rgba(var(--text-color));
+    }
 }

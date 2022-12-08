@@ -59,7 +59,7 @@ const TableInput = ({
                     editable={number === 2}
                     onEnter={onEnter}
                 />
-                <div>{verb.translation}</div>
+                <div className={styles.translation}>{verb.translation}</div>
             </div>
         );
     });

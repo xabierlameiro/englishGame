@@ -1,9 +1,9 @@
-export const irregular_verbs = [
+const irregular_verbs = [
     {
         infinitive: "Arise",
         pastSimple: "Arose",
         pastParticiple: "Arisen",
-        translation: "Surgir, Levantarse",
+        translation: "Surgir/ Levantarse",
     },
     {
         infinitive: "Awake",
@@ -12,7 +12,7 @@ export const irregular_verbs = [
         translation: "Despertarse",
     },
     {
-        infinitive: "Be/ am, are, is",
+        infinitive: "Be/ am/ are/ is",
         pastSimple: "Was / Were",
         pastParticiple: "Been",
         translation: "Ser / Estar",
@@ -21,7 +21,7 @@ export const irregular_verbs = [
         infinitive: "Bear",
         pastSimple: "Bore",
         pastParticiple: "Borne / Born",
-        translation: "Soportar, dar a luz",
+        translation: "Soportar/ dar a luz",
     },
     {
         infinitive: "Beat",
@@ -57,7 +57,7 @@ export const irregular_verbs = [
         infinitive: "Bind",
         pastSimple: "Bound",
         pastParticiple: "Bound",
-        translation: "Atar, encuadernar",
+        translation: "Atar/ encuadernar",
     },
     {
         infinitive: "Bid",
@@ -130,6 +130,12 @@ export const irregular_verbs = [
         pastSimple: "Bought",
         pastParticiple: "Bought",
         translation: "Comprar",
+    },
+    {
+        infinitive: "Can",
+        pastSimple: "Could",
+        pastParticiple: "",
+        translation: "Poder",
     },
     {
         infinitive: "Cast",
@@ -333,7 +339,7 @@ export const irregular_verbs = [
         infinitive: "Have",
         pastSimple: "Had",
         pastParticiple: "Had",
-        translation: "Haber o Tener",
+        translation: "Haber / Tener",
     },
     {
         infinitive: "Hear",
@@ -843,7 +849,7 @@ export const irregular_verbs = [
         infinitive: "Tread",
         pastSimple: "Trod",
         pastParticiple: "Trodden",
-        translation: "Pisar, hollar",
+        translation: "Pisar/ hollar",
     },
     {
         infinitive: "Understand",
@@ -932,9 +938,7 @@ const result = irregular_verbs.map((item, index) => {
         infinitive: item.infinitive,
         pastSimple: item.pastSimple,
         pastParticiple: item.pastParticiple,
-        translation: {
-            es: item.translation,
-        },
+        translation: item.translation,
     };
 });
 

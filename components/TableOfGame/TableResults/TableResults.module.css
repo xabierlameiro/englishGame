@@ -16,16 +16,16 @@
 }
 
 .success {
-    color: rgba(var(--success-color), 1);
+    color: rgba(var(--success-color), 0.5);
 }
 
 .wrong {
-    color: rgba(var(--error-color), 1);
+    color: rgba(var(--error-color), 0.5);
     text-decoration: line-through;
 }
 
 .solution {
-    color: var(--text-color);
+    color: rgba(var(--text-color), 0.5);
     padding-left: 10px;
     font-size: 20px;
 }
@@ -55,7 +55,7 @@
     }
 
     .solution {
-        color: var(--text-color);
+        color: rgba(var(--text-color), 0.5);
         padding-left: 0;
         font-size: 16px;
     }

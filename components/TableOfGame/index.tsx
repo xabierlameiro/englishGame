@@ -28,7 +28,7 @@ const TableOfGame = () => {
 
     return (
         <>
-            <TableCounter score={score} max={154} />
+            <TableCounter score={score} max={155} />
             <div className={styles.table}>
                 <TableHeader />
                 <TableInput

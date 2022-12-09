@@ -33,7 +33,7 @@
 @media only screen and (max-width: 600px) {
     .row {
         grid-template-columns: calc(33.33vw - 20px);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         scroll-snap-align: start;
         justify-items: center;
         text-align: center;

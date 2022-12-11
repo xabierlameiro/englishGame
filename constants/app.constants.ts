@@ -14,10 +14,10 @@ export const ONLY_TEXT_REGEXP = /^[a-zA-Z]+$/;
 export const menu = [
     {
         route: "/",
-        title: "Hand book",
+        title: "Verb list",
     },
     {
         route: "/game",
-        title: "Game of Irregular Verbs",
+        title: "Game",
     },
 ];

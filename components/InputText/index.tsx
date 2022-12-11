@@ -5,6 +5,7 @@ import { ONLY_TEXT_REGEXP, TEXT, EMPTY } from "@/constants/app.constants";
 import { onlyLettersAvailable } from "@/helpers";
 
 const InputText = (props: InputTextProps) => {
+    const { onChange, value, placeHolder } = props;
     const [term, setTerm] = React.useState(EMPTY);
 
     const customHanlderClick = (event: onChangeType) => {
@@ -13,13 +14,13 @@ const InputText = (props: InputTextProps) => {
         if (event.target.value === EMPTY) {
             if (string.length <= 10) {
                 setTerm(EMPTY);
-                props.onChange?.(event);
+                onChange?.(event);
             }
         }
         if (ONLY_TEXT_REGEXP.test(event.target.value)) {
             if (string.length <= 10) {
                 setTerm(event.target.value);
-                props.onChange?.(event);
+                onChange?.(event);
             }
         }
     };
@@ -28,9 +29,9 @@ const InputText = (props: InputTextProps) => {
             <input
                 type={TEXT}
                 className={styles.input}
-                value={props.value ?? term}
+                value={value ?? term}
                 onChange={customHanlderClick}
-                placeholder={props.placeHolder}
+                placeholder={placeHolder}
             />
         </div>
     );

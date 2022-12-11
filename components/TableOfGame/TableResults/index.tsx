@@ -10,26 +10,24 @@ const TableResults = ({ resultList }: { resultList: ObjectVerbType[] }) => {
         Object.values(VERBS).map((type, index) => {
             if (index > 2) return;
             return (
-                <>
-                    <div className={styles.normal} key={index}>
-                        <div
-                            className={`${styles.normal} ${
-                                item.verbType === type && !item.success
-                                    ? styles.wrong
-                                    : item.verbType === type && item.success
-                                    ? styles.success
-                                    : EMPTY
-                            }`}
-                        >
-                            {item.verbType === type ? item.query : item[type]}
-                        </div>
-                        <div className={styles.solution}>
-                            {item.verbType === type && !item.success
-                                ? `(${item[type]})`
-                                : EMPTY}
-                        </div>
+                <div className={styles.normal} key={index}>
+                    <div
+                        className={`${styles.normal} ${
+                            item.verbType === type && !item.success
+                                ? styles.wrong
+                                : item.verbType === type && item.success
+                                ? styles.success
+                                : EMPTY
+                        }`}
+                    >
+                        {item.verbType === type ? item.query : item[type]}
                     </div>
-                </>
+                    <div className={styles.solution}>
+                        {item.verbType === type && !item.success
+                            ? `(${item[type]})`
+                            : EMPTY}
+                    </div>
+                </div>
             );
         });
 

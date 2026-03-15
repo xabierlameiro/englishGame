@@ -11,11 +11,9 @@
     regenerator-runtime "^0.13.11"
 
 "@babel/runtime@^7.10.2", "@babel/runtime@^7.18.9":
-  version "7.20.5"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.5.tgz#6e1e187d7eaafdb9e0354f9a4815a8e10c8b4cfe"
-  integrity sha512-+4k537wJj1TFJnGfT3gHR5gz5os0XUVYebg4Utdq0KtIxJqiWHtHSSivHBIMFR5Bt0uojHXJKExtKbOywqDtFg==
-  dependencies:
-    regenerator-runtime "^0.13.11"
+  version "7.28.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.28.6.tgz#d267a43cb1836dc4d182cce93ae75ba954ef6d2b"
+  integrity sha512-05WQkdpL9COIMz4LjTxGpPNCdlpyimKppYNoJ5Di5EUObifl8t4tuLuUBBZEpoLYOmfvIWrsp9fCl0HoPRVTdA==
 
 "@emnapi/runtime@^1.7.0":
   version "1.8.1"
